@@ -1,16 +1,9 @@
 import React, { useEffect, useState } from "react";
 
-function Stock({stock, onBuyStocks}) {
+function Stock({stock, onBuyStocks, user}) {
     console.log(stock)
+    
     const [user_id, setUserId] = useState("")
-
-    const [user, setUser] = useState([])
-
-    useEffect(() => {
-        fetch('http://localhost:9292/user')
-        .then(res => res.json())
-        .then(user => setUser(user))
-    }, [])
 
     function handleFormSubmit(e) {
         e.preventDefault();
@@ -35,7 +28,7 @@ function Stock({stock, onBuyStocks}) {
             <h2>{stock.name}</h2>
             <small>{stock.price}</small>
             <button 
-                onClick={setUserId(user.id)}>
+                onClick={setUserId}>
                 Buy Stock
             </button>
             <hr/>

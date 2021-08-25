@@ -5,6 +5,15 @@ import StockList from './StockList';
 import Portfolio from './Portfolio';
 
 function Main() {
+
+    const [user, setUser] = useState([])
+
+    useEffect(() => {
+        fetch('http://localhost:9292/user')
+        .then(res => res.json())
+        .then(user => setUser(user))
+    }, [])
+
     return (
         <div>
             <Switch>
@@ -13,11 +22,11 @@ function Main() {
                 </Route>
 
                 <Route path = "/stocks">
-                    <StockList/>
+                    <StockList user = {user}/>
                 </Route>
                 
                 <Route path = "/user">
-                    <Portfolio />
+                    <Portfolio user = {user}/>
                 </Route>
             </Switch>            
         </div>

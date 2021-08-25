@@ -59,7 +59,7 @@ function NewStock({addStock}) {
                     value = {price} 
                     onChange={(e) => setPrice(e.target.value)} />
             </label>
-            <button type="submit">Create</button>
+            <button type="submit">Launch</button>
         </form>
 
     )

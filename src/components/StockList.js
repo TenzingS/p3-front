@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Stock from "./Stock";
 import NewStock from "./NewStock";
 
-function StockList() {
+function StockList({user}) {
     const [stocks, setStocks] = useState([])
 
     useEffect(() => {
@@ -28,6 +28,7 @@ function StockList() {
                     <Stock
                         key={Math.random()}
                         stock = {stock}
+                        user = {user}
                         onBuyStocks = {handleBuyStock}
                     />
                 ))}
