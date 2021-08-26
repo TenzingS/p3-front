@@ -35,7 +35,7 @@ function NewStock({addStock}) {
          <h2 className = 'addnewstock'>New Stock IPO:</h2>
          <form className="newstock" onSubmit={handleSubmit}>
             <label className="labeladdname">
-                Name:
+                Name: {}
                 <input
                     className ='addstockname' 
                     type="text" 
@@ -45,7 +45,7 @@ function NewStock({addStock}) {
             </label>
             <br/>
             <label className="labeladdimage">
-                Image URL:
+                Image URL: {}
                 <input 
                     className = 'addlogo'
                     type="text" 
@@ -55,7 +55,7 @@ function NewStock({addStock}) {
             </label>
             <br/>
             <label className="labeladdprice">
-                Price:
+                Price: {}
                 <input 
                     className = 'addprice'
                     type="text" 

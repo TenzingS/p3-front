@@ -8,7 +8,8 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; 
-    background: rgb(160, 160, 144);
+    /* background: rgb(160, 160, 144); */
+    background: rgb(131, 156, 155);
 }
 
 .App {
@@ -68,7 +69,7 @@ a:active {
 
 .labeladdname {
   display: inline-block;
-  margin-right: 650px;
+  margin-right: 651px;
   margin-bottom: 8px;
 }
 
@@ -101,15 +102,66 @@ a:active {
 
                                   /* stocks */
 
-.stockname {
-  text-align: center;
+.allstocks {
+  margin-top: 20px;
+  margin-left: 400px;
+}
+
+.individualstock {
+  float:left;
+  width: 30%;
+  margin-bottom: 100px;
+  margin-right: 200px;
 }
 
 .img {
   width: 250px;
   height: 200px;
-  /* float:left  */
+  float:left;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 10px;
 }
+
+.stockname {
+  text-align: center;
+  font-size:30px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  margin-top: 50px;
+  
+}
+
+.stockprice {
+  text-align: center;
+  font-size:30px;
+  float:right;
+  margin-top: 50px;
+  
+}
+
+.stockshares {
+  font-size:20px;
+  float:left;
+  margin-left: 15px;
+}
+
+.buybutton{
+  color: rgb(17, 16, 16);
+  border: 2px solid #030303dc;
+  background: #bccfcf;
+  font-weight: bold;
+  padding: 5px;
+  color: rgb(5, 5, 5);
+}
+
+.buybutton:hover{
+  background: rgb(128, 137, 179);
+}
+
+.buybutton:active {
+  color: rgb(223, 9, 9);
+}
+
 
 
 

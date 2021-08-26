@@ -7,8 +7,9 @@ function StockList({user, stocks, handleAddStock, handleBuyStock, handleFunds, h
     return(
         <div className="stocklist">
             <h1 className ='buyingpower'>Buying Power: ${user.funds}</h1>
-            <ul className = 'stocksul'>
+            <div className = 'stocksdiv'>
                 <NewStock addStock = {handleAddStock}/>
+                <div className = "allstocks">
                 {stocks.map((stock) => (
                     <Stock
                         key={Math.random()}
@@ -19,7 +20,8 @@ function StockList({user, stocks, handleAddStock, handleBuyStock, handleFunds, h
                         handleRandomStock = {handleRandomStock}
                     />
                 ))}
-            </ul>
+                </div>
+            </div>
         </div>
     )
 }

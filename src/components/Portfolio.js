@@ -45,7 +45,7 @@ function Portfolio({user, stocks, handleBuyStock, handleFunds}) {
                 <button className = 'button' type="submit">Deposit</button>
             </form>
             <hr/>
-            <ul className = 'stockul'>
+            <div className = "allstocks">
                 {stocks.map((stock) => (
                     <YourStocks
                         key={Math.random()}
@@ -55,7 +55,7 @@ function Portfolio({user, stocks, handleBuyStock, handleFunds}) {
                         handleFunds = {handleFunds}
                     />
                 ))}
-            </ul>
+            </div>
             
         </div>
     )
