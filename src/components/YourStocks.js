@@ -4,7 +4,7 @@ function YourStocks({stock, user, onBuyStocks, handleFunds}) {
   const [user_id, setUserId] = useState()
   const [shares, setShares] = useState(stock.shares - 1)
   const [funds, setFunds] = useState()
-
+  
   function handleFormSubmit(e) {
       e.preventDefault();
 
@@ -60,12 +60,21 @@ function YourStocks({stock, user, onBuyStocks, handleFunds}) {
    }
     }
 
+    function shorting() {
+      if (stock.shares>=0) {
+        return "Shares:"
+      }
+      else {
+        return "Shares Shorted:"
+      }
+    }
+
   return (
       <div className = 'individualstock'>
           <img className="img" src={stock.logo_url} alt={stock.name}/>
           <h2 className = 'stockname'>{stock.name}</h2>
           <h3 className = 'stockprice'>${stock.price}</h3>
-          <h4>Shares:{stock.shares}</h4>
+          <h4>{shorting()} {stock.shares}</h4>
           <button 
               className = 'button'
               onClick={handleFormSubmit}>

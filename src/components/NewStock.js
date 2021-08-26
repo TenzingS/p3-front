@@ -31,11 +31,10 @@ function NewStock({addStock}) {
 
       
     return(
-      <>
-         <h2 className = 'addnewstock'> Add New Stock</h2>
+      <div className = 'newstock'>
+         <h2 className = 'addnewstock'>New Stock IPO:</h2>
          <form className="newstock" onSubmit={handleSubmit}>
-            <br/>
-            <label className="labeladd">
+            <label className="labeladdname">
                 Name:
                 <input
                     className ='addstockname' 
@@ -45,7 +44,7 @@ function NewStock({addStock}) {
                     onChange={(e) => setStock(e.target.value)} />
             </label>
             <br/>
-            <label className="labeladd">
+            <label className="labeladdimage">
                 Image URL:
                 <input 
                     className = 'addlogo'
@@ -55,7 +54,7 @@ function NewStock({addStock}) {
                     onChange={(e) => setLogoURL(e.target.value)} />
             </label>
             <br/>
-            <label className="labeladd">
+            <label className="labeladdprice">
                 Price:
                 <input 
                     className = 'addprice'
@@ -67,7 +66,7 @@ function NewStock({addStock}) {
             <button className = 'addbutton' type="submit">Launch</button>
             <hr/>
         </form>
-      </>
+      </div>
     )
 }
 
