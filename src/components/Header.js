@@ -3,16 +3,16 @@ import { NavLink } from "react-router-dom"
 
 function Header() {
     return(
-        <body>
+        <div className ='header'>
             <h4 className = "title"> Flatiron Stock Exchange</h4>
             <nav className = "tabs">
                 <ul className = "nav">
-                    <li><NavLink exact to="/">Home</NavLink></li>
-                    <li><NavLink to="/stocks">Stocks</NavLink></li>
-                    <li><NavLink to="/user">Portfolio</NavLink></li>
+                    <li className = 'links'><NavLink exact to="/">Home</NavLink></li>
+                    <li className = 'links'><NavLink to="/stocks">Stocks</NavLink></li>
+                    <li className = 'links'><NavLink to="/user">Portfolio</NavLink></li>
                 </ul>
             </nav>
-        </body>
+        </div>
     )
 }
 

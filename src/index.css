@@ -1,61 +1,48 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background: rgb(218, 212, 157);
+    sans-serif; 
+    background: rgb(160, 160, 144);
 }
 
-
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.App {
+  text-align: center;
+  background: rgb(160, 160, 144);
 }
 
 .title{
-  text-align: center;
-  font-size: 40px;
-  background: black;
+  font-size: 50px;
+  background: rgb(19, 18, 18);
   color: white;
   padding: 20px 30px;
 }
 
-.head{
-  font-family:'Courier New', Courier, monospace;
-  height: 101px;
-  width: 100%;
-  border-radius: 5px;
-  font-size: 70px;
-  color: rgb(0, 0, 0);
-  line-height: 80px;
-  font-weight: bold;
-}
-
 .tabs{
   font-family:'Courier New', Courier, monospace;
-  background: #d2e0e0;
-  border: 8px solid #929aa7dc;
-  margin-left: auto;
-  margin-right: auto;
-  width: 48em;
-  border-radius: 5px;
+  background: #ebeeee;
+  /* border: 8px solid #929aa7dc; */
+  /* border-radius: 5px; */
 }
 
-nav ul{
-  margin-right: 0px;
-  margin-left: 100px;
-  
-  
-}
-
-nav ul li{
+.links{
   display: inline-block;
   margin: 0 25px;
-  
+  padding: 10px;
 }
+
+
+
+.stockname {
+  text-align: center;
+}
+
+
 
 nav ul li a{
   color: rgb(0, 0, 0);
@@ -77,4 +64,12 @@ nav ul li a{
 
 h2 { 
   text-align: left;
+}
+
+.news {
+  z-index: 2;
+  max-width: 1300px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 60px;
 }
