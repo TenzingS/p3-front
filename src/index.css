@@ -3,30 +3,37 @@
   padding: 0px;
 }
 
+html {
+  margin-bottom: 300px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; 
     /* background: rgb(160, 160, 144); */
-    background: rgb(131, 156, 155);
+    background: rgb(79, 127, 136);
 }
 
 .App {
   text-align: center;
-  background: rgb(131, 156, 155);
+  /* background: rgb(131, 156, 155); */
+  
+  background: #5ab1bd;
 }
 
 .title{
   font-size: 50px;
   background: rgb(19, 18, 18);
-  color: white;
+  color: rgb(66, 193, 231);
   padding: 30px;
 }
 
 .tabs{
   font-family:'Courier New', Courier, monospace;
-  background: #ebeeee;
+  background: #8e9478;
+  padding: 20px;
   /* border: 8px solid #929aa7dc; */
   /* border-radius: 5px; */
 }
@@ -40,7 +47,7 @@ body {
   text-transform: uppercase;
 }
 nav ul li a{
-  color: rgb(0, 0, 0);
+  color: rgb(12, 53, 12);
 }
 
 a:hover{
@@ -64,21 +71,23 @@ a:active {
   float: left;
   margin-left: 700px;
   color: rgb(21, 40, 211);
-  
 }
 
 .labeladdname {
   display: inline-block;
   margin-right: 651px;
   margin-bottom: 8px;
+  font-weight: bold;
 }
 
 .labeladdimage {
   margin-right: 685px;
+  font-weight: bold;
 }
 
 .labeladdprice {
-  margin-left: 332px;
+  margin-left: 332px;;
+  font-weight: bold;
 }
 
 .addbutton {
@@ -103,8 +112,9 @@ a:active {
                                   /* stocks */
 
 .allstocks {
-  margin-top: 20px;
+  margin-top: 60px;
   margin-left: 400px;
+  
 }
 
 .individualstock {
@@ -112,6 +122,7 @@ a:active {
   width: 30%;
   margin-bottom: 100px;
   margin-right: 200px;
+  
 }
 
 .img {
@@ -128,7 +139,6 @@ a:active {
   margin-right: 20px;
   margin-bottom: 40px;
   margin-top: 50px;
-  
 }
 
 .stockprice {
@@ -162,14 +172,65 @@ a:active {
   color: rgb(223, 9, 9);
 }
 
+                          /* portfolio */
 
+.username{
+  font-size:40px;
+  text-transform: uppercase;
+  margin-top: 10px;
+  color: rgb(12, 48, 126);
+}                         
 
+.addfunds {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
 
+.funds{ 
+  margin-left: 10px;
+}
+.button{
+  color: rgb(17, 16, 16);
+  border: 2px solid #030303dc;
+  background: #bccfcf;
+  font-weight: bold;
+  padding: 3px;
+  color: rgb(5, 5, 5);
+  margin-left: 10px;
+}
 
+.button:hover{
+  background: rgb(128, 137, 179);
+}
+
+.button:active {
+  color: rgb(223, 9, 9);
+}
+
+                               /* homenews */
+
+.breakingnews {
+  font-size:40px;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+.newsdiv {
+  
+}
+.newsimage {
+  width: 800px;
+  height: 500px;
+  float:left;
+  border: 5px solid rgb(0, 0, 0);
+  border-radius: 10px;
+}
 .news {
-  z-index: 2;
-  max-width: 1300px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 60px;
+  margin-left: 500px;
+  float:left
+  
+}
+
+.newstitle {
+  margin-top: 1000px;
 }
