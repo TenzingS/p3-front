@@ -1,24 +1,8 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Stock from "./Stock";
 import NewStock from "./NewStock";
 
-function StockList({user}) {
-    const [stocks, setStocks] = useState([])
-
-    useEffect(() => {
-        fetch('http://localhost:9292/stocks')
-        .then(res => res.json())
-        .then(stocks => setStocks(stocks))
-    }, [])
-
-    function handleAddStock(newStock) {
-        setStocks([...stocks, newStock]);
-      }
-
-    function handleBuyStock(boughtstocks) {
-        setStocks(boughtstocks)
-    }
-
+function StockList({user, stocks, handleAddStock, handleBuyStock, handleFunds, handleRandomStock}) {
 
     return(
         <div className="list">
@@ -30,6 +14,8 @@ function StockList({user}) {
                         stock = {stock}
                         user = {user}
                         onBuyStocks = {handleBuyStock}
+                        onHandleFunds = {handleFunds}
+                        handleRandomStock = {handleRandomStock}
                     />
                 ))}
             </ul>

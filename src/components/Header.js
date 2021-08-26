@@ -4,9 +4,7 @@ import { NavLink } from "react-router-dom"
 function Header() {
     return(
         <body>
-            <nav className = "head">
-                <h3 className = "title"> Flatiron Stock Exchange</h3>
-            </nav>
+            <h4 className = "title"> Flatiron Stock Exchange</h4>
             <nav className = "tabs">
                 <ul class = "nav">
                     <li><NavLink exact to="/">Home</NavLink></li>
