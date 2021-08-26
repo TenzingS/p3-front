@@ -31,37 +31,43 @@ function NewStock({addStock}) {
 
       
     return(
-         <form className="new-stock" onSubmit={handleSubmit}>Create a new stock:
-         <br/>
-            <label>
+      <>
+         <h2> Add New Stock</h2>
+         <form className="newstock" onSubmit={handleSubmit}>
+            <br/>
+            <label className="labeladd">
                 Name:
-                <input 
+                <input
+                    className ='addstockname' 
                     type="text" 
                     name="name" 
                     value = {name} 
                     onChange={(e) => setStock(e.target.value)} />
             </label>
             <br/>
-            <label>
+            <label className="labeladd">
                 Image URL:
                 <input 
+                    className = 'addlogo'
                     type="text" 
                     name="logo_url" 
                     value = {logo_url} 
                     onChange={(e) => setLogoURL(e.target.value)} />
             </label>
             <br/>
-            <label>
+            <label className="labeladd">
                 Price:
                 <input 
+                    className = 'addprice'
                     type="text" 
                     name="price" 
                     value = {price} 
                     onChange={(e) => setPrice(e.target.value)} />
             </label>
-            <button type="submit">Launch</button>
+            <button className = 'addbutton' type="submit">Launch</button>
+            <hr/>
         </form>
-
+      </>
     )
 }
 

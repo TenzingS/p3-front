@@ -30,21 +30,22 @@ function Portfolio({user, stocks, handleBuyStock, handleFunds}) {
     }
     
     return(
-        <div>
-            <h2>{user.name}</h2>
-            <h1> {debt()}</h1>
-            <h3>Funds: ${user.funds}</h3>
-            <form className="add-funds" onSubmit={handleSubmitEvent}>Add Funds:
-                <label>
+        <div className ='portfolio'>
+            <h1 className= 'username'>{user.name}</h1>
+            <h1 className = 'debt'> {debt()}</h1>
+            <h1 className='buyingpower'>Buying Power: ${user.funds}</h1>
+            <form className="addfunds" onSubmit={handleSubmitEvent}>Add Funds:
+                <label className = 'funds'>
                     <input 
                         type="text" 
                         name="funds" 
                         value = {funds} 
                         onChange={(e) => setFunds(e.target.value)} />
                 </label>
-                <button type="submit">Deposit</button>
+                <button className = 'button' type="submit">Deposit</button>
             </form>
-            <ul>
+            <hr/>
+            <ul className = 'stockul'>
                 {stocks.map((stock) => (
                     <YourStocks
                         key={Math.random()}

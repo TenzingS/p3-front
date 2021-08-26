@@ -61,13 +61,13 @@ function YourStocks({stock, user, onBuyStocks, handleFunds}) {
     }
 
   return (
-      <div>
+      <div className = 'individualstock'>
           <img className="img" src={stock.logo_url} alt={stock.name}/>
-          <h2>{stock.name}</h2>
-          <small>${stock.price}</small>
-          <br/>
-          <small>Shares:{stock.shares}</small>
+          <h2 className = 'stockname'>{stock.name}</h2>
+          <h3 className = 'stockprice'>${stock.price}</h3>
+          <h4>Shares:{stock.shares}</h4>
           <button 
+              className = 'button'
               onClick={handleFormSubmit}>
               Sell Stock
           </button>

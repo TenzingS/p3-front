@@ -5,8 +5,9 @@ import NewStock from "./NewStock";
 function StockList({user, stocks, handleAddStock, handleBuyStock, handleFunds, handleRandomStock}) {
 
     return(
-        <div className="list">
-            <ul>
+        <div className="stocklist">
+            <h1 className ='buyingpower'>Buying Power: {user.funds}</h1>
+            <ul className = 'stocksul'>
                 <NewStock addStock = {handleAddStock}/>
                 {stocks.map((stock) => (
                     <Stock

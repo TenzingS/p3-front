@@ -29,44 +29,45 @@ function Stock({stock, onBuyStocks, user, onHandleFunds, handleRandomStock}) {
     function handleClick(e) {
         e.preventDefault();
         funds = funds - stock.price
+        if (funds > 0) {
 
-       fetch(`http://localhost:9292/stocks/${stock.id}`, {
-         method: "PATCH",
-         headers: {
-           "Content-Type": "application/json",
-           Accept: 'application/json'
-         },
-        body: JSON.stringify({
-           user_id: user_id,
-           shares: shares,
-           price: stock.price
-         }),
-       })
-         .then((r) => r.json())
-         .then((stock) => onBuyStocks(stock));
+          fetch(`http://localhost:9292/stocks/${stock.id}`, {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: 'application/json'
+            },
+            body: JSON.stringify({
+              user_id: user_id,
+              shares: shares,
+              price: stock.price
+            }),
+          })
+            .then((r) => r.json())
+            .then((stock) => onBuyStocks(stock));
 
-        fetch(`http://localhost:9292/users/${user.id}`, {
-         method: "PATCH",
-         headers: {
-           "Content-Type": "application/json",
-           Accept: 'application/json'
-         },
-        body: JSON.stringify({
-           funds: funds,
-         }),
-       })
-         .then((r) => r.json())
-         .then((fund) => onHandleFunds(fund));
-     }
+            fetch(`http://localhost:9292/users/${user.id}`, {
+            method: "PATCH",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: 'application/json'
+            },
+            body: JSON.stringify({
+              funds: funds,
+            }),
+          })
+            .then((r) => r.json())
+            .then((fund) => onHandleFunds(fund));
+        } }
 
     return (
-        <div>
+        <div className = 'individualstock'>
             <img className="img" src={stock.logo_url} alt={stock.name}/>
-            <h2>{stock.name}</h2>
-            <small>${stock.price}</small>
-            <br/>
-            <small>Shares:{stock.shares}</small>
+            <h2 className = 'stockname'>{stock.name}</h2>
+            <h3 className = 'stockprice'>${stock.price}</h3>
+            <h4>Shares:{stock.shares}</h4>
             <button 
+                className = 'button'
                 onClick={handleClick}>
                 Buy Stock
             </button>

@@ -20,23 +20,6 @@ function Main() {
         .then(res => res.json())
         .then(user => setUser(user))
     }, [])
-
-    // useEffect(() => {
-    //     const interval = setInterval(() => {
-    //         fetch(`http://localhost:9292/stocks`, {
-    //             method: "PATCH",
-    //             headers: {
-    //                 "Content-Type": "application/json",
-    //                 Accept: 'application/json'
-    //              },
-    //             body: JSON.stringify({ 
-    //             }),
-    //             })
-    //             .then((r) => r.json())
-    //             .then((stock) => setStocks(stock));
-    //     }, 100);
-    //     return () => clearInterval(interval);
-    // }, [])
     
     function handleAddStock(newStock) {
         setStocks([...stocks, newStock]);
@@ -77,7 +60,7 @@ function Main() {
     })
 
     return (
-        <div>
+        <div className ="main">
             <Switch>
                 <Route exact path = "/">
                     <Home/>
