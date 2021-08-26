@@ -32,7 +32,7 @@ function NewStock({addStock}) {
       
     return(
       <>
-         <h2> Add New Stock</h2>
+         <h2 className = 'addnewstock'> Add New Stock</h2>
          <form className="newstock" onSubmit={handleSubmit}>
             <br/>
             <label className="labeladd">
