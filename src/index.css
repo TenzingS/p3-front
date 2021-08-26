@@ -16,7 +16,10 @@ code {
 
 .title{
   text-align: center;
-  font-size: 40px
+  font-size: 40px;
+  background: black;
+  color: white;
+  padding: 20px 30px;
 }
 
 .head{
@@ -70,4 +73,8 @@ nav ul li a{
 .img {
   width: 200px;
   height: auto;
+}
+
+h2 { 
+  text-align: left;
 }

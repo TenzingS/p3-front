@@ -22,10 +22,17 @@ function Portfolio({user, stocks, handleBuyStock, handleFunds}) {
          .then((fund) => {handleFunds(fund); setFunds('')});
 
     }
+
+    function debt() {
+        if (user.funds < 0) {
+            return 'Negative Funds'
+        }
+    }
     
     return(
         <div>
             <h2>{user.name}</h2>
+            <h1> {debt()}</h1>
             <h3>Funds: ${user.funds}</h3>
             <form className="add-funds" onSubmit={handleSubmitEvent}>Add Funds:
                 <label>
