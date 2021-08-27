@@ -22,7 +22,7 @@ function Stock({stock, onBuyStocks, user, onHandleFunds, handleRandomStock}) {
               })
               .then((r) => r.json())
               .then((stockz) => handleRandomStock(stockz));
-      }, 1000);
+      }, 2000);
       return () => clearInterval(interval);
   }, [])
 

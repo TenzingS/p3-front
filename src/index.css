@@ -7,6 +7,11 @@ html {
   margin-bottom: 300px;
 }
 
+.stockmarket {
+  width: 1500px;
+  height: 400px;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -20,7 +25,7 @@ body {
   text-align: center;
   /* background: rgb(131, 156, 155); */
   
-  background: #4b92e2;
+  background: #5dbee4;
 }
 
 .title{
@@ -75,7 +80,7 @@ a:active {
   text-align: center;
   float: left;
   margin-left: 700px;
-  color: rgb(8, 29, 99);
+  color: rgb(18, 8, 168);
 }
 
 .labeladdname {
@@ -183,7 +188,7 @@ a:active {
   font-size:40px;
   text-transform: uppercase;
   margin-top: 10px;
-  color: rgb(7, 48, 5);
+  color: rgb(18, 8, 168);
 }                         
 
 .addfunds {
@@ -221,7 +226,7 @@ a:active {
 }
 
 .breakingnews {
-  background: rgb(60, 115, 129);
+  background: #5dbee4;
   padding: 30px;
   font-size: 50px;
 }
@@ -254,5 +259,5 @@ a:active {
   margin-top:40px;
   font-size:20px;
   font-style: italic;
-  font-weight: 500;
+  font-weight: bold;
 }

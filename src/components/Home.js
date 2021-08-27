@@ -1,6 +1,6 @@
 function Home() {
     return (
-        <div className = 'homescreen'>
+        <div className = 'homescreen' >
             <h1 className = 'breakingnews'>Breaking News</h1>
             <div className="allnews">
                     <div className="individualarticle">
