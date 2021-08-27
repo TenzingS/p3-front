@@ -13,14 +13,14 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; 
     /* background: rgb(160, 160, 144); */
-    background: rgb(79, 127, 136);
+    background: rgb(109, 178, 196);
 }
 
 .App {
   text-align: center;
   /* background: rgb(131, 156, 155); */
   
-  background: #5ab1bd;
+  background: #2d72aa;
 }
 
 .title{
@@ -32,7 +32,7 @@ body {
 
 .tabs{
   font-family:'Courier New', Courier, monospace;
-  background: #8e9478;
+  background: #aca479;
   padding: 20px;
   /* border: 8px solid #929aa7dc; */
   /* border-radius: 5px; */
@@ -47,7 +47,7 @@ body {
   text-transform: uppercase;
 }
 nav ul li a{
-  color: rgb(12, 53, 12);
+  color: rgb(0, 0, 0);
 }
 
 a:hover{
@@ -64,13 +64,18 @@ a:active {
   padding: 30px;
 }
 
+.img {
+  width: 200px;
+  height: auto;
+}
+
 /* addingstocks */
 
 .addnewstock {
   text-align: center;
   float: left;
   margin-left: 700px;
-  color: rgb(21, 40, 211);
+  color: rgb(8, 29, 99);
 }
 
 .labeladdname {
@@ -127,7 +132,7 @@ a:active {
 
 .img {
   width: 250px;
-  height: 200px;
+  height: 250px;
   float:left;
   border: 5px solid rgb(0, 0, 0);
   border-radius: 10px;
@@ -178,7 +183,7 @@ a:active {
   font-size:40px;
   text-transform: uppercase;
   margin-top: 10px;
-  color: rgb(12, 48, 126);
+  color: rgb(159, 173, 26);
 }                         
 
 .addfunds {
@@ -209,28 +214,45 @@ a:active {
 
                                /* homenews */
 
-.breakingnews {
-  font-size:40px;
-  text-transform: uppercase;
-  padding: 30px;
-}
-
-.newsdiv {
+.allnews {
+  margin-top: 60px;
+  margin-left: 300px;
   
 }
-.newsimage {
-  width: 800px;
-  height: 500px;
+
+.breakingnews {
+  background: rgb(60, 115, 129);
+  padding: 30px;
+  font-size: 50px;
+}
+
+.individualarticle {
+  float:left;
+  width: 80%;
+  margin-bottom: 100px;
+}
+
+.image {
+  width: 700px;
+  height: 400px;
   float:left;
   border: 5px solid rgb(0, 0, 0);
   border-radius: 10px;
-}
-.news {
-  margin-left: 500px;
-  float:left
-  
+  margin-right: 30px;
 }
 
 .newstitle {
-  margin-top: 1000px;
+  text-align: center;
+  font-size:30px;
+  margin-right: 20px;
+  margin-bottom: 40px;
+  margin-top: 20px;
+  color:rgb(177, 17, 17)
+}
+
+.description {
+  margin-top:50px;
+  font-size:20px;
+  font-style: italic;
+  font-weight: 500;
 }

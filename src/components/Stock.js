@@ -17,7 +17,7 @@ function Stock({stock, onBuyStocks, user, onHandleFunds, handleRandomStock}) {
               body: JSON.stringify({
                   user_id: stock.user_id,
                   shares: stock.shares,
-                  price: Math.floor(Math.random() * 1000) + 1 
+                  price: Math.floor(Math.random() * 2000) + 1 
               }),
               })
               .then((r) => r.json())
