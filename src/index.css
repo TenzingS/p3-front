@@ -13,14 +13,14 @@ body {
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif; 
     /* background: rgb(160, 160, 144); */
-    background: rgb(109, 178, 196);
+    background: rgb(103, 158, 196);
 }
 
 .App {
   text-align: center;
   /* background: rgb(131, 156, 155); */
   
-  background: #2d72aa;
+  background: #4b92e2;
 }
 
 .title{
@@ -183,7 +183,7 @@ a:active {
   font-size:40px;
   text-transform: uppercase;
   margin-top: 10px;
-  color: rgb(159, 173, 26);
+  color: rgb(7, 48, 5);
 }                         
 
 .addfunds {
@@ -246,12 +246,12 @@ a:active {
   font-size:30px;
   margin-right: 20px;
   margin-bottom: 40px;
-  margin-top: 20px;
+  margin-top: 5px;
   color:rgb(177, 17, 17)
 }
 
 .description {
-  margin-top:50px;
+  margin-top:40px;
   font-size:20px;
   font-style: italic;
   font-weight: 500;
